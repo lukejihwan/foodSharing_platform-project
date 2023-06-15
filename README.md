@@ -11,3 +11,9 @@
 javaSE, jdbc, oracleDB
 
 ## 시연 영상
+-사업자 회원가입 \
+![나눔플랫폼_사업자회원가입](https://github.com/lukejihwan/foodSharing_platform-project/assets/111648451/48f412d2-c147-4d9b-a089-739d7bbcaaad)
+
+
+-사업자 메뉴등록 \
+![나눔플랫폼_상품등록](https://github.com/lukejihwan/foodSharing_platform-project/assets/111648451/61a8fb5e-dbd4-4a7e-b836-12c103ff4434)
