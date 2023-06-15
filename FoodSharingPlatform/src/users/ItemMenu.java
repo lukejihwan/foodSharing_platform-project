@@ -121,8 +121,9 @@ public class ItemMenu extends JPanel{
 		g2.setColor(Color.BLACK);
 		g2.setFont(new Font("굴림", Font.BOLD, 15));
 		
-		g2.drawString("가게이름", 120, 20);
+		g2.drawString("가게이름", 120, 20); 
 		g2.drawString(storeMenuDTO.getStoreMemberDTO().getStoreName(),200, 20); //상호명 나올 곳
+		//이 부분이 에러남
 		
 		g2.drawString("음식이름", 120, 50);
 		g2.drawString(storeMenuDTO.getFoodName(), 200, 50);//음식이름 나올 곳
