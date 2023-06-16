@@ -41,6 +41,7 @@ public class UserMemberDAO {
 		return result;
 	}
 	
+	//유저 회원가입
 	public int insert(UserMemberDTO userMemberDTO) {
 		int result=0;
 		Connection con=null;
@@ -72,6 +73,7 @@ public class UserMemberDAO {
 		return result;
 	}
 	
+	//유저 로그인
 	public UserMemberDTO login(String id, String pass) {
 		UserMemberDTO userMemberDTO=null;
 		Connection con=null;
@@ -101,6 +103,7 @@ public class UserMemberDAO {
 		return userMemberDTO;
 	}
 	
+	//메뉴 검색 쿼리
 	public List<StoreMenuDTO> search(String column, String content) {
 		StringBuilder sb=new StringBuilder();
 		ArrayList<StoreMenuDTO> list=new ArrayList<StoreMenuDTO>();

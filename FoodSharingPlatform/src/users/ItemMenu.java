@@ -122,7 +122,7 @@ public class ItemMenu extends JPanel{
 		g2.setFont(new Font("굴림", Font.BOLD, 15));
 		
 		g2.drawString("가게이름", 120, 20); 
-		g2.drawString(storeMenuDTO.getStoreMemberDTO().getStoreName(),200, 20); //상호명 나올 곳
+		//g2.drawString(storeMenuDTO.getStoreMemberDTO().getStoreName(),200, 20); //상호명 나올 곳
 		//이 부분이 에러남
 		
 		g2.drawString("음식이름", 120, 50);
@@ -132,7 +132,7 @@ public class ItemMenu extends JPanel{
 		g2.drawString(storeMenuDTO.getServings(), 200, 80); //몇인분 나오는 곳
 		
 		g2.drawString("음식종류", 310, 20);
-		g2.drawString(storeMenuDTO.getStoreMemberDTO().getFoodCategory(), 400, 20); //음식종류 나오는 곳
+		//g2.drawString(storeMenuDTO.getStoreMemberDTO().getFoodCategory(), 400, 20); //음식종류 나오는 곳
 
 		g2.drawString("예약마감시간", 310, 50);
 		g2.drawString(storeMenuDTO.getDeadLine(), 410, 50); //예약마감시간 나오는 곳

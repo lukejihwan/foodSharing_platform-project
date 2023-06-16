@@ -275,12 +275,18 @@ public class JoinPage extends Page{
 		userMemberDTO.setPhoneNum(ph_num);
 		System.out.println(birth);
 		System.out.println(ph_num);
+		
 		if(t_pass.getText().equals(t_pass2.getText())) { //직접적으로 String을 비교하는 방식이 확실함
 			System.out.println("비밀번호 일치");
 			if(t_name.getText()!="" && t_pass.getText()!="" && t_pass2.getText()!="" && box_year.getSelectedIndex()!=0 && box_mon.getSelectedIndex()!=0 && box_day.getSelectedIndex()!=0 && t_cardNum.getText()!="" && box_phoneNum.getSelectedIndex()!=0 && t_frontNum.getText()!="" && t_endNum.getText()!="") {
 
-				if(result==2) { //모든 조건이 충족되었을 때 insert실행
+				if(result==2) { //모든 조건이 충족되었을 때 insert실행 후 로그인 페이지로 돌아오기
 					userMain.userMemberDAO.insert(userMemberDTO);
+					System.out.println("회원가입성공");
+					JOptionPane.showMessageDialog(userMain, "회원가입 성공");
+					clean();
+					userMain.showHide(UserMain.LOGINPAGE);
+					
 				}else {
 					JOptionPane.showMessageDialog(userMain, "ID중복확인이 필요합니다");
 				}
@@ -297,6 +303,11 @@ public class JoinPage extends Page{
 			JOptionPane.showMessageDialog(userMain, "비밀번호가 동일하지 않습니다");
 			
 		}
+	}
+	
+	//회원가입 완료후 회원가입 폼 초기화
+	public void clean() {
+		
 	}
 	
 }
