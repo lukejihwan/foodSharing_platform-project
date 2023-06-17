@@ -15,6 +15,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
 
 import design.RoundButton;
 import memberStore.StoreMenuDTO;
@@ -119,6 +120,7 @@ public class ReservePage extends Page{
 			public void actionPerformed(ActionEvent e) {
 				int option=JOptionPane.showConfirmDialog(userMain, "로그아웃 하시겠습니까?");
 				if(option==JOptionPane.OK_OPTION) {
+					updateUI();
 					userMain.showHide(UserMain.LOGINPAGE);
 				}
 			}
