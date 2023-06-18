@@ -6,6 +6,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.time.LocalDate;
 import java.util.List;
 
 import javax.swing.JButton;
@@ -16,6 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
+import javax.xml.crypto.Data;
 
 import design.RoundButton;
 import memberStore.StoreMenuDTO;
@@ -26,6 +28,7 @@ public class ReservePage extends Page{
 	RoundButton bt_chat;
 	RoundButton bt_thank;
 	JLabel la_user;
+	JLabel la_date;
 	RoundButton bt_logout;
 	
 	JPanel p_north;
@@ -47,6 +50,7 @@ public class ReservePage extends Page{
 		bt_chat=new RoundButton("기부자와 채팅");
 		bt_thank=new RoundButton("나눔감사 글");
 		la_user=new JLabel("사용자 : ");
+		la_date=new JLabel("날짜 : "+LocalDate.now());
 		bt_logout=new RoundButton("로그아웃");
 		p_north=new JPanel() {
 			protected void paintComponent(Graphics g) {
@@ -79,6 +83,7 @@ public class ReservePage extends Page{
 		bt_chat.setBounds(175, 2, 80, 30);
 		bt_thank.setBounds(260, 2, 80, 30);
 		la_user.setBounds(775, 2, 80, 30);
+		la_date.setBounds(650, 2, 150, 30);
 		bt_logout.setBounds(890, 2, 70, 30);
 		p_north.setPreferredSize(new Dimension(990,47));
 		p_search.setPreferredSize(new Dimension(990,50));
@@ -94,6 +99,7 @@ public class ReservePage extends Page{
 		p_north.add(bt_chat);
 		p_north.add(bt_thank);
 		p_north.add(la_user);
+		p_north.add(la_date);
 		p_north.add(bt_logout);
 		add(p_north);
 		add(p_search);
