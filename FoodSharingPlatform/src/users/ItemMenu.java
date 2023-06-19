@@ -124,6 +124,7 @@ public class ItemMenu extends JPanel{
 		g2.drawString("가게이름", 120, 20); 
 		//g2.drawString(storeMenuDTO.getStoreMemberDTO().getStoreName(),200, 20); //상호명 나올 곳
 		//이 부분이 에러남
+		//DB 다시 수정
 		
 		g2.drawString("음식이름", 120, 50);
 		g2.drawString(storeMenuDTO.getFoodName(), 200, 50);//음식이름 나올 곳
