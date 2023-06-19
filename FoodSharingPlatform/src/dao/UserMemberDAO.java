@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 import memberStore.StoreMemberDTO;
 import memberStore.StoreMenuDTO;
@@ -14,7 +15,7 @@ import util.DBManager;
 
 public class UserMemberDAO {
 	DBManager dbManager=DBManager.getInstance();
-	
+	private Logger  logger=Logger.getLogger(this.getClass().getName());
 	
 	public int selectid(String id) {
 		int result=0;
