@@ -131,6 +131,14 @@ public class ReservePage extends Page{
 				}
 			}
 		});
+		
+		//플랫폼 소개 페이지로 이동
+		bt_introduce.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				//userMain.showHide(null);
+				JOptionPane.showConfirmDialog(userMain, "소개페이지로 이동");
+			}
+		});
 	}
 	
 	public void setId(String id) {
