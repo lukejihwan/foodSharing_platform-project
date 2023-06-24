@@ -85,7 +85,7 @@ public class UserMain extends JFrame{
 		add(pages[1]);
 		pages[2].setBounds(0, 0, 1000, 700);
 		add(pages[2]);
-		
+		System.out.println("유저화면 시작완료");
 		showHide(LOGINPAGE);
 		
 		setSize(1000, 700);
