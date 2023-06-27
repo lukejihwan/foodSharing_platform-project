@@ -36,7 +36,8 @@ public class UserMain extends JFrame{
 	public static final int LOGINPAGE=0;
 	public static final int JOINPAGE=1;
 	public static final int RESERVEPAGE=2;
-	Page[] pages=new Page[3];
+	public static final int INTODUCEPAGE=3;
+	Page[] pages=new Page[4];
 	boolean flag;
 	
 	//코드 짜면서 멤버변수선언이 필요한 곳
@@ -73,6 +74,7 @@ public class UserMain extends JFrame{
 		pages[0]=new LoginPage(this);
 		pages[1]=new JoinPage(this);
 		pages[2]=new ReservePage(this);
+		pages[3]=new IntroPage(this);
 		
 		p_west.setBackground(COLOR3);
 		c.setLayout(null); //AbsoluteLayout을 사용하려면 Container를 null로 설정해주어야함

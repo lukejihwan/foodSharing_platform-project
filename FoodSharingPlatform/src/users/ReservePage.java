@@ -138,6 +138,7 @@ public class ReservePage extends Page{
 				//userMain.showHide(null);
 				JOptionPane.showConfirmDialog(userMain, "소개페이지로 이동");
 				System.out.println("이동");
+				userMain.showHide(UserMain.INTODUCEPAGE);
 			}
 		});
 	}
