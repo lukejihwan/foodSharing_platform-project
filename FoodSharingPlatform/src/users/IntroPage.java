@@ -7,6 +7,7 @@ public class IntroPage extends Page{
 		super(userMain);
 		System.out.println("소개페이지");
 		System.out.println("이동");
+		System.out.println();
 	}
 
 }
