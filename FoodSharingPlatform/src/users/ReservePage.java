@@ -136,9 +136,10 @@ public class ReservePage extends Page{
 		bt_introduce.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//userMain.showHide(null);
-				JOptionPane.showConfirmDialog(userMain, "소개페이지로 이동");
-				System.out.println("이동");
-				userMain.showHide(UserMain.INTODUCEPAGE);
+				int option=JOptionPane.showConfirmDialog(userMain, "소개페이지로 이동");
+				if(option==JOptionPane.OK_OPTION) {
+					userMain.showHide(UserMain.INTODUCEPAGE);	
+				}
 			}
 		});
 	}
