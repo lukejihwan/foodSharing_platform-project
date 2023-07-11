@@ -70,7 +70,7 @@ public class DBManager {
 		if(instance==null) {
 			instance = new DBManager();
 		}
-	return instance;
+		return instance;
 	}
 	
 	public void release(Connection connection) {
