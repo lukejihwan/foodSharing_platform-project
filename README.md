@@ -18,14 +18,14 @@ Swing기반의 GUI모드로 식당운영자가 당일 나눔하고자 하는 음
 - 공통된 페이지 영역을 하나의 클래스로 묶어 각각의 페이지가 상속 받아 사용하도록 하여 코드 중복 제거
 
 ## 💻사용기술
-### javaSE : 
+### ⚙️javaSE : 
 1. JFrame, JButton, JTextField 등 Swing기반으로 독립형 실행프로그램 설계
 2. Connection 객체 싱글톤으로 구축 <br>
 
-### jdbc : 
+### ⚙️jdbc : 
 1. 사업자, 사용자 회원가입 저장 쿼리 구현
 2. 업로드 할 음식의 CRUD 구현 <br>
-### oracleDB
+### ⚙️oracleDB
 
 ## 💻시연 영상
 - 사업자 회원가입 <br>
